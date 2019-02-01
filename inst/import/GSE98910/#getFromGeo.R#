@@ -1,0 +1,3 @@
+library(GEOquery)
+getGEO(GEO="GSE98910", destdir=".", AnnotGPL=T)
+GSE12946.data <- getGEO(filename="GSE12946_series_matrix.txt.gz")
