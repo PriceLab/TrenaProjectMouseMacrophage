@@ -6,7 +6,7 @@ build:
 	(cd ..; R CMD build --no-build-vignettes trenaProjectMouseMacrophage)
 
 install:
-	(cd ..; R CMD INSTALL trenaProjectMouseMacrophage)
+	(cd ..; R CMD INSTALL --no-test-load trenaProjectMouseMacrophage)
 
 check:
 	(cd ..; R CMD check `ls -t trenaProjectMouseMacrophage) | head -1`)
